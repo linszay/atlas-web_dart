@@ -6,9 +6,9 @@ int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
     if (shotType == 'freeThrow') {
       teamAPoints += score;
     } else if (shotType == '2Pointer') {
-      teamAPoints += score * 2;
+      teamAPoints += score + 2;
     } else if (shotType == '3Pointer') {
-      teamAPoints += score * 3;
+      teamAPoints += score + 3;
     }
   });
 
@@ -16,9 +16,9 @@ int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
     if (shotType == 'freeThrow') {
       teamBPoints += score;
     } else if (shotType == '2Pointer') {
-      teamBPoints += score * 2;
+      teamBPoints += score + 2;
     } else if (shotType == '3Pointer') {
-      teamBPoints += score * 3;
+      teamBPoints += score + 3;
     }
   });
 
