@@ -4,6 +4,6 @@ void outer(String name, String id) {
 
 String inner(String name) {
     List<String> splitName = name.split(" ");
-    String lastName = splitName[1];
-    return "$lastName";
+    String firstName = splitName[0];
+    return "$firstName";
 }
