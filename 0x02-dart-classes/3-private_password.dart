@@ -1,6 +1,7 @@
 class Password {
+    String _password = '';
 
-    Password({String password}) {
+    Password({required String password}) {
         _password = password;
     }
 
