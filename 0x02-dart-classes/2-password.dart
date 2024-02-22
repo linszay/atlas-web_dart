@@ -1,5 +1,5 @@
 class Password {
-  String password;
+  String password = '';
 
   Password(this.password);
 
