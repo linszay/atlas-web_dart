@@ -1,7 +1,5 @@
 class User {
-    String name;
-
-    User(this.name);
+    String name = User();
 
     String showName() {
         return "Hello $name";
