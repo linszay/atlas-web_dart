@@ -1,5 +1,5 @@
 class User {
-    int id = '';
+    int id = 0;
     String name = '';
     int age = 0;
     double height = 0.0;
