@@ -29,6 +29,7 @@ class User {
     }
 
     String toString() {
-        return 'User(id : $id ,name: $name, age: $age, height: $height, $user_password)';
+        Password password = Password(password: user_password);
+        return 'User(id : $id ,name: $name, age: $age, height: $height, ${password.toString()})';
     }
 }
