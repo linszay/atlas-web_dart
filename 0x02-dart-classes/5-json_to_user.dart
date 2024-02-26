@@ -1,5 +1,5 @@
 class User {
-    String id = '';
+    int id = '';
     String name = '';
     int age = 0;
     double height = 0.0;
@@ -24,7 +24,6 @@ class User {
         );
     }
 
-    @override
     String toString() {
         return 'User(id: $id, name: $name, age: $age, height: $height)';
     }
