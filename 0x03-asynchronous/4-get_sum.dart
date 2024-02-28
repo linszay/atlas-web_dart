@@ -14,6 +14,6 @@ Future<double> calculateTotal() async {
         
         return totalPrice;
     } catch (e) {
-        return -1 as int;
+        return -1.toInt();
     }
 }
