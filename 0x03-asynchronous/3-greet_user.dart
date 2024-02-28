@@ -3,7 +3,7 @@ import '3-util.dart';
 Future<String> greetUser() async {
     try {
         final userData = await fetchUserData();
-        final username = userData['username'];
+        final username = userData['username'] as String;
         return 'Hello $username';
         } catch (error) {
             return 'error caught: $error';
