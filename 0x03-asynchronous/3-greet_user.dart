@@ -1,8 +1,10 @@
+import 'dart:convert';
 import '3-util.dart';
 
 Future<String> greetUser() async {
     try {
         final userData = await fetchUserData();
+        Map<String, dynamic> userMap = json.decode(userData);
         final username = userData['username'].toString();
         return 'Hello $username';
         } catch (error) {
