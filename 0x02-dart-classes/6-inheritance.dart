@@ -1,12 +1,13 @@
 import '6-password.dart';
-class User {
+class User extends Password{
     int id = 0;
     String name = '';
     int age = 0;
     double height = 0.0;
     String? user_password;
     
-    User({required this.id, required this.name, required this.age, required this.height, required this.user_password});
+    User({required this.id, required this.name, required this.age, required this.height, required this.user_password,
+  }) : super(user_password);
 
     Map<String, dynamic> toJson() {
         return {
@@ -29,7 +30,7 @@ class User {
     }
 
     String toString() {
-        Password password = Password(password: user_password);
+       Password password = Password(password: user_password);
         return 'User(id : $id ,name: $name, age: $age, height: $height, ${password.toString()})';
     }
 }
