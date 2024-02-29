@@ -4,7 +4,7 @@ class User extends Password{
     String name = '';
     int age = 0;
     double height = 0.0;
-    String? user_password;
+    String user_password;
     
     User({required this.id, required this.name, required this.age, required this.height, required this.user_password,
   }) : super(password: user_password ?? '');
