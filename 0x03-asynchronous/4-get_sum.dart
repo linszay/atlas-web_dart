@@ -12,7 +12,7 @@ Future<double> calculateTotal() async {
             totalPrice += double.parse(productPrice);
         }
         
-        return totalPrice;
+        return totalPrice.toString();
     } catch (e) {
         return '-1';
     }
